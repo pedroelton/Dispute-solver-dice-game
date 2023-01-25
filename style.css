@@ -9,8 +9,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       height: 100vh;
-      background-color: #222;
+      background-color: #000000;
+      background-image: url("./images/nnneon.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
       color: #d4d4d4;
       font-size: 16px;
       line-height: 140%;
@@ -19,12 +24,26 @@
       overflow: hidden;
   }
   
+  .container {
+      background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 20%, rgba(255, 255, 255, 0.1) 70%);
+      backdrop-filter: blur(0.5rem);
+      padding: 2rem;
+      margin: 2rem;
+      border: 1px solid #ffffff20;
+      border-radius: 16px;
+  }
+  
   .header {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(2rem);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 4rem;
+      padding-top: 4rem;
+      padding-bottom: 2rem;
       gap: 1rem;
       text-align: center;
   }
@@ -37,9 +56,10 @@
   }
   
   .header h3 {
-      color: #d4d4d4;
+      color: #fff;
       font-size: 0.9rem;
       font-weight: 400;
+      text-shadow: 2px;
   }
   
   main {
@@ -63,12 +83,9 @@
       font-size: 0.7rem;
   }
   
-  .player1 h2 {
-      color: #4791ff;
-  }
-  
+  .player1 h2,
   .player2 h2 {
-      color: #ff8b3d;
+      color: #fff;
   }
   
   .p1Victory,
@@ -78,7 +95,7 @@
   }
   
   .hide {
-      color: #222;
+      color: transparent;
   }
   
   .diceBody1,
@@ -142,10 +159,10 @@
   }
   
   .rollTheDice {
-      background-color: #c8ff00;
+      background-color: hsl(162, 100%, 58%);
       color: #222;
       border: 0;
-      box-shadow: 0 0 16px rgba(200, 255, 0, 1);
+      box-shadow: 0 0 16px hsl(162, 100%, 58%);
       border-radius: 99px;
       padding: 16px 32px;
       font-size: 16px;
@@ -157,27 +174,35 @@
   }
   
   .rollTheDice:hover {
-      background-color: #c8ff00;
+      background-color: hsl(162, 100%, 58%);
       transform: scale(0.9) translateY(5px);
-      box-shadow: 0 0 5px rgba(200, 255, 0, 1);
+      box-shadow: 0 0 5px hsl(162, 100%, 58%);
   }
   
   .rollTheDice:active {
-      background-color: #91ba00;
+      background-color: hsl(270, 73%, 53%);
+      box-shadow: 0 0 5px hsl(270, 73%, 53%);
+      color: #fff;
   }
   
   .resetTheGame {
-      background-color: #ff0000;
+      background-color: transparent;
       color: #fff;
       border: 0;
       border-radius: 99px;
       padding: 16px 32px;
       font-size: 16px;
+      text-decoration: underline;
       line-height: 100%;
       transition: all 0.3s ease-in-out;
-      font-weight: 600;
+      font-weight: 400;
       text-transform: uppercase;
       cursor: pointer;
+  }
+  
+  .resetTheGame:hover {
+      text-decoration: underline;
+      font-size: 14px;
   }
   
   footer {
@@ -185,6 +210,6 @@
   }
   
   footer a {
-      color: #c8ff00;
+      color: hsl(162, 100%, 58%);
       font-weight: 600;
   }
