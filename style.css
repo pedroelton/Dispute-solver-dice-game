@@ -193,8 +193,11 @@
           height: 8rem;
       }
       .header h3 {
-          width: 60%;
+          width: 80%;
           font-size: 0.9rem;
+      }
+      .header {
+          padding: 1rem;
       }
       .header h1 {
           padding-top: 1rem;
