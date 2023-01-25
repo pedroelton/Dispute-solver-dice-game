@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dispute solver: Solve your disputes by rolling a dice</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <head>
+        <link rel="icon" type="image/png" href="./images/favicon.png" />
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    </head>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Roll the dice</h1>
+        <h3>The best way to solve your disputes! Who ever wins, WINS!</h3>
+    </header>
+    <main>
+        <div class="player1">
+            <h2 editable>Player 1</h2>
+            <p class="p1Victory hide">VICTORY!</p>
+
+            <div class="diceBody1"></div>
+        </div>
+        <div class="player2">
+            <h2 editable>Player 2</h2>
+            <p class="p2Victory hide">VICTORY!</p>
+            <div class="diceBody2"></div>
+        </div>
+    </main>
+    <div class="controlls">
+        <button class="rollTheDice" onclick="handleRoll()">
+				Roll the dice
+			</button>
+        <button class="resetTheGame" onclick="handleReset()">
+				reset the game
+			</button>
+    </div>
+    <footer>
+        <small>
+				©Copyright 2022 - All rights reserved -
+				<a href="https://pedroelton.vercel.app">Pedro Elton</a>
+			</small>
+    </footer>
+</body>
+<script src="./script.js"></script>
+
+</html>
